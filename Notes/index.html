@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
     <title>Pirate Notes</title>
 
@@ -29,10 +32,17 @@
         .view {
             height: 100%;
         }
-        /* Navigation*/
+        /*Heading*/
+        h1{
+        	font-family: 'Baloo Bhaina', cursive;
+        }
+       /* Navigation*/
         
         .navbar {
             background-color: #000;
+        }
+        #navbar-brand{
+        	font-family: 'Bree Serif', serif;
         }
 
         
@@ -40,6 +50,10 @@
             -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
             -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
             transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+        .h1{
+        	font-family: 'Baloo Bhaina', cursive;
+        	size: 0.8em;
         }
         #list1,
         #list2,
@@ -55,7 +69,7 @@
         }
         .dropdown{
         	padding-top: 7.5px;
-        	padding-left: 5px.
+        	padding-left: 8px;
         }
         .dropdown-menu{
         	background-color: #000;
@@ -66,6 +80,7 @@
             background-color: #1C2331;
             margin-top: 0;
         }
+
         
         @media only screen and (max-width: 768px) {
             .navbar {
@@ -89,6 +104,7 @@
             color: #fff;
         }
         
+        
         @media (min-width: 776px) {
             .carousel .view ul li {
                 display: inline;
@@ -109,7 +125,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" id="navbar-brand" href="index.html">
                 <strong>Pirate Notes</strong>
             </a>
             <div class="collapse navbar-collapse" id="navbarNav1">
@@ -117,14 +133,16 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Previous Year Papers</a>
-                    </li>
-					                    <li class="nav-item">
-                        <a class="nav-link">Coming Soon</a>
-                    </li>
+                    <li  id="paper-dropdown" class="dropdown nav-item">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Previous Year Papers<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a id="list1" class="nav-link" href="papers16.html">2016</a></li>
+            <li class="nav-item"><a id="list2" class="nav-link" href="ece.html">2017</a></li>
+            <li class="nav-item"><a id="list3" class="nav-link" href="#">2018</a></li>
+          </ul>
           
-                    
+        </li>
+					                             
                     
                      <li class="dropdown nav-item">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subjects <span class="caret"></span></a>
@@ -165,7 +183,7 @@
                 <div class="full-bg-img flex-center white-text">
                     <ul class="animated fadeInUp col-md-12">
                         <li>
-                            <h1 class="h1-responsive flex-item">Pirate Notes</h1>
+                            <h1 class="h1-responsive flex-item" id="Center">Pirate Notes</h1>
                             <li>
                                 <p class="flex-item">For the Engineer In You</p>
                             </li>
@@ -214,7 +232,7 @@
                             <p>For the Engineer In You</p>
                         </li>
                         <li>
-                            <a target="_blank" href="http://mdbootstrap.com/forums/forum/support/" class="btn btn-default btn-lg">Misc.</a>
+                            <a target="_blank" href="#" class="btn btn-default btn-lg">Misc.</a>
                         </li>
                     </ul>
                 </div>
@@ -308,7 +326,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2017Copyright: <a href="http://www.piratenotes.in"> Piratenotes.in</a>
+                © 2017 Copyright: <a href="http://www.piratenotes.in"> Piratenotes.in</a>
 
             </div>
         </div>
