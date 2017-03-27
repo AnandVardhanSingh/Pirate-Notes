@@ -98,6 +98,64 @@
         .carousel-inner {
             height: 100%;
         }
+        #previous-controller:hover{
+        	background-color: #000;
+        	opacity:0.5;
+       
+
+        }
+        #next-controller:hover{
+        	background-color: #000;
+        	opacity:0.5;
+        	
+        	
+        }
+        /*Body*/
+        #description{
+        	text-align: center;
+        	padding-top: 50px;
+
+        }
+        #content{
+        	text-align: center;
+        }
+        /*Tiles*/
+        #cse-tile,#ece-tile,#misc-tile{
+        	height:250px;
+        	width: 100%;
+        	margin-bottom: 15px;
+        	position: relative;
+        	border: 2px solid #000;
+        	overflow: hidden;
+
+
+        }
+        #cse-tile{
+        	background: url('https://www.edutry.com/UniversityImage/exam.jpg')
+
+        }
+        #ece-tile{
+        	background: url('http://www.testandmeasurementtips.com/wp-content/uploads/2011/07/GDS-1000-series-DSO.jpg') no-repeat; 
+        }
+        #misc-tile{
+        	background: url('http://media.gettyimages.com/photos/japanese-high-school-classroom-picture-id492604048?s=612x612') 
+        }
+
+        #cse-tile:hover, #ece-tile: hover, #misc-tile: hover{
+        	box-shadow: 0 1px 5px 1px #CCCCCC;
+        }
+
+        #cse-tile span, #ece-tile span, #misc-tile span{
+        	position: absolute;
+        	bottom: 0;
+        	right: 0;
+        	width: 100%;
+        	text-align: center;
+        	font-size: 1.6em;
+        	background-color: #000;
+        	color: #fff;
+        	opacity: 0.8;
+        }
         /*Caption*/
         
         .flex-center {
@@ -152,11 +210,12 @@
             <li class="nav-item"><a id="list3" class="nav-link" href="#">Misc.</a></li>
           </ul>
           <li id="about_us" class="nav-item">
-                        <a class="nav-link">About Us</a>
+                        <a href="#about-us" class="nav-link">About Us</a>
                     </li>
         </li>
 
                 </ul>
+                
                 
             </div>
         </div>
@@ -245,11 +304,11 @@
         <!--/.Slides-->
 
         <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+        <a id="previous-controller" class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+        <a id="next-controller" class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -258,6 +317,16 @@
     <!--/.Carousel Wrapper-->
     
     <!--/.Main layout-->
+     <div class="container">
+     <a name="about-us"><div  id="description"><h2>About Us</h2></h2></div></a>
+     <div id="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget lectus sit amet diam sodales maximus sit amet eu velit. In maximus pulvinar sagittis. Vivamus ac scelerisque orci. Nulla maximus ex enim. Praesent placerat dolor non enim viverra fermentum. Nulla tincidunt lobortis enim, sit amet maximus enim viverra lobortis. Donec eget iaculis nisl. Pellentesque ut congue ligula, ac aliquam quam. Donec eget ornare libero. Integer sed malesuada ex. Integer consequat ipsum id dui rhoncus viverra. In hac habitasse platea dictumst. Praesent ac lectus pretium, egestas enim in, convallis mi. Proin vulputate vitae libero et ultrices. Donec sed tellus ac urna egestas accumsan at vel nunc.</p></div>
+   <div class="row" id="paper-tiles">
+  <div class="col-md-4 col-sm-12 col-xs-12"><a href="#"><div id="cse-tile"><span>Computer Science</span></div></a></div>
+  <div class="col-md-4 col-sm-6 col-xs-12"><a href="ece.html"><div id="ece-tile"><span>Electronics</span></div></a></div>
+  <div class="col-md-4 col-sm-6 col-xs-12"><a href="#"><div id="misc-tile"><span>Misc.</span></div></a></div>
+  </div>
+       
+   </div>
 
    <!--Footer-->
     <footer class="page-footer center-on-small-only">
@@ -268,7 +337,7 @@
 
                 <!--First column-->
                 <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                    <h5 class="title">ABOUT MATERIAL DESIGN</h5>
+                    <h5 class="title">Lorem Ipsum</h5>
                     <p>We Believe in Providing Education at your Bed  </p>
 
                     
